@@ -1,0 +1,349 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+	.section {
+	}	
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {	
+
+	.main-menu {
+		background-color: #fff;
+		position: fixed;
+		top: 82px;
+		left: 0;
+		right: 0;
+		text-align: left;
+		margin-left: 0;
+		z-index: 98;
+		display: none;
+
+		.inverse & {
+			top: 57px;
+		}
+
+		a {
+			color: #000;
+		}
+
+		ul {
+			display: block;
+			height: auto;
+			padding: 15px 0;
+
+			li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.section {
+		&-main {
+			padding-top: 60px;
+
+			&-title {
+				font-size: 33px;
+			}
+
+			&-list {
+				display: block;
+
+				li {
+					width: 100%;
+					padding-left: 30px;
+
+					&:before {
+						width: 20px;
+						height: 20px;
+						margin-top: -10px;
+						background-size: 99%;
+					}
+				}
+			}
+		}
+
+		&-catalog {
+
+			.categories {
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.category {
+				margin: 0 15px 20px;
+			}
+		}
+
+		&-reviews {			
+
+			.review {
+				height: auto;
+				flex-direction: column-reverse;
+
+				&-block {
+					width: 100%;
+					height: 360px;
+				}
+
+				&-image {
+					padding: 0;
+					width: 100%;
+					margin-bottom: 20px;
+
+					img {
+						height: 300px;
+					}
+				}
+			}
+
+			.carousel-reviews {
+				.owl {
+					&-dots {
+						bottom: 20px;
+						right: 0;
+					}
+				}
+			}
+		}
+
+		&-contacts {
+			.map {
+				width: 500px;
+			}
+		}
+	}
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+	.section-map {
+		display: block;
+
+		iframe, div {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.button {
+		min-width: auto;
+	}
+
+	.flex-row {
+		display: block;
+		& > * {
+			width: 100%;
+		}
+	}
+
+	.form {
+		.mb {
+			margin-bottom: 30px;
+		}
+	}
+
+	.section {
+		padding: 25px 0 30px;
+
+		&-main {
+			padding-top: 70px;
+			padding-bottom: 0;
+
+			&-title {
+				font-size: 35px;
+				// margin-top: 20px;
+			}
+
+			&-subtitle {
+				font-size: 25px;
+				margin-bottom: 30px;
+			}
+		}
+
+		&-scheme {
+			&-content {
+				flex-wrap: wrap;
+				justify-content: center;
+
+				&:before {
+					display: none;
+				}
+			}
+
+			.scheme {
+				margin: 0 20px 20px;
+			}
+		}
+
+		&-reviews {
+			.quote, .quote2 {
+				display: none !important;
+			}
+
+			.review {
+				&-block {
+					padding: 15px 15px 40px;
+					height: 330px;
+				}
+			}
+
+			.carousel-reviews {
+				padding: 0;
+			}
+		}
+
+		&-question {
+			&-content {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+
+		&-contacts {
+			&-content {
+				display: block;
+			}
+
+			.map {
+				width: 100%;
+			}
+		}		
+
+	}	
+
+	.footer {
+		&-content {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+	.col-xxs-12 {
+		width: 100%;
+	}
+
+	.col-xxs-offset-0 {
+		margin-left: 0;
+	}
+
+	.hidden-xss {
+		display: none !important;
+	}
+
+	.modal {
+		&-content {
+			padding: 15px;
+		}
+	}
+
+	.owl-carousel {
+		padding: 0 50px;
+
+		.owl {			
+			&-prev, &-next {
+				width: 25.5px;
+				height: 49.5px;
+				margin-top: -24.75px;
+				background-size: contain;
+			}
+		}
+	}
+
+	.form {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.section {
+		&-main {
+			&-title {
+				font-size: 28px;
+			}
+
+			&-subtitle {
+				font-size: 20px;
+			}
+
+			&-list {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+
+		&-reviews {
+			.review {
+				&-block {
+					height: 460px;
+				}
+			}
+		}
+	}
+
+}
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.main-menu {
+		.container {
+			width: auto;
+			padding: 0;
+		}
+	}
+}
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+}
+	/**/
+
