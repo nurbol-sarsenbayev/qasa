@@ -234,6 +234,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
+  .call-me {
+    display: block;
+  }
+  
 	.col-xxs-12 {
 		width: 100%;
 	}
